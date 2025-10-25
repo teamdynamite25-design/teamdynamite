@@ -1,0 +1,66 @@
+Prompt: Build a modern, human-friendly React.js frontend project named LapXpert for a laptop e-commerce store. The application must:
+
+Authentication & Navigation:
+
+Include a dedicated login page (/login) with an email + password form and a single “Login” button.
+
+Simulate authentication with no actual backend—logging in simply redirects to homepage.
+
+Use React Router for clean navigation across /login, /home, and /cart routes.
+
+Homepage Design:
+
+After login, direct users to a homepage (/home) showcasing 5 laptops (using the provided static dummy data).
+
+Show for each product: image, model name, release year, RAM, storage, color, and price, in a clear decorative card-style grid.
+
+Add a non-functional “Add to Cart” button for each product (UI only, no cart functionality).
+
+Navbar:
+
+Place a visually distinct navbar at the top with links: Home, Products, Cart (disabled/greyed out initially), and Logout.
+
+Navbar remains responsive and visually consistent across screen sizes.
+
+Styling:
+
+Style app exclusively with Tailwind CSS for a clean, modern, and attractive look.
+
+Ensure all pages and product cards are mobile-responsive, visually appealing, and ready for a demo.
+
+Prioritize a professional and decorative appearance, suitable for showcasing to others.
+
+Code & Hosting:
+
+Use static dummy product data for laptops, exactly as per the provided sample.
+
+Organize code and assets to make the project easy to download, run locally, and host on GitHub Pages with minimal config.
+
+Include clear README instructions for running locally and deploying to GitHub Pages.
+
+If running with a local Python server, provide a simple main.py to serve static site.
+
+Ensure all page routes and assets function after download and when invoking main.py server.
+
+Extra:
+
+App should use human-friendly labels, tooltips, and calls to action.
+
+Add decorative design elements (e.g., hover effects, subtle backgrounds, etc.) to enhance appearance.
+
+Website is named LapXpert; display branding/logo clearly.
+
+Write easy-to-understand code, logical folder structure, and comments for learners and demo purposes.
+
+All assets and images should be local or CDN-friendly for seamless GitHub hosting.
+
+Static Product Data (for demo):
+
+javascript
+const PRODUCTS = [
+    { ASIN: 'B0B94152F6', Model_Name: 'MacBook Air M2', Release_Year: 2022, RAM_GB: 8, Storage_GB: 256, Color: 'Midnight', Base_Price: 110000 },
+    { ASIN: 'B0B94213G7', Model_Name: 'MacBook Air M2', Release_Year: 2022, RAM_GB: 16, Storage_GB: 512, Color: 'Starlight', Base_Price: 140000 },
+    { ASIN: 'B0CJ5KWD22', Model_Name: 'MacBook Pro M3', Release_Year: 2023, RAM_GB: 8, Storage_GB: 512, Color: 'Space Grey', Base_Price: 169900 },
+    { ASIN: 'B0CJ5LSM38', Model_Name: 'MacBook Pro M3 Pro', Release_Year: 2023, RAM_GB: 18, Storage_GB: 512, Color: 'Space Black', Base_Price: 199900 },
+    { ASIN: 'B08N5XSG8Z', Model_Name: 'MacBook Air M1', Release_Year: 2020, RAM_GB: 8, Storage_GB: 256, Color: 'Silver', Base_Price: 99900 },
+];
